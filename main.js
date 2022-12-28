@@ -4,7 +4,7 @@ const navbar = document.getElementById("nav");
 const toTop = document.getElementById("totop");
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY >= 20) {
+  if (window.scrollY > 200) {
     navbar.classList.add("blur");
     toTop.style.visibility = "visible";
   } else {
