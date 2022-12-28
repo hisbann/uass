@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="nav">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: #a259ff; transform: ; msfilter: ">
+          <path
+            d="M19.148 2.971A2.008 2.008 0 0 0 17.434 2H6.566c-.698 0-1.355.372-1.714.971L2.143 7.485A.995.995 0 0 0 2 8a3.97 3.97 0 0 0 1 2.618V19c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-8.382A3.97 3.97 0 0 0 22 8a.995.995 0 0 0-.143-.515l-2.709-4.514zm.836 5.28A2.003 2.003 0 0 1 18 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.22 4h2.214l2.55 4.251zM10.819 4h2.361l.813 4.065C13.958 9.137 13.08 10 12 10s-1.958-.863-1.993-1.935L10.819 4zM6.566 4H8.78l-.76 3.804.02.004C8.025 7.872 8 7.932 8 8c0 1.103-.897 2-2 2a2.003 2.003 0 0 1-1.984-1.749L6.566 4zM10 19v-3h4v3h-4zm6 0v-3c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v3H5v-7.142c.321.083.652.142 1 .142a3.99 3.99 0 0 0 3-1.357c.733.832 1.807 1.357 3 1.357s2.267-.525 3-1.357A3.99 3.99 0 0 0 18 12c.348 0 .679-.059 1-.142V19h-3z"
+          ></path>
+        </svg>
+        <h1>NFT Marketplace</h1>
+      </div>
+      <ul class="link-nav">
+        <li><a href="">Marketplace</a></li>
+        <li><a href="">Rangkings</a></li>
+        <li><a href="">Connect a wallet</a></li>
+        <li><a href="">Sign Up</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+    </header>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="" onclick="handleClick()">Marketplace</a></li>
+      <li><a href="" onclick="handleClick()">Rangkings</a></li>
+      <li><a href="#highlight" onclick="handleClick()">Highlight</a></li>
+      <li><a href="" onclick="handleClick()">Connect a wallet</a></li>
+      <li><a href="" onclick="handleClick()">Sign Up</a></li>
+    </ul>
+    <!-- Navbar -->
+
+    <a href="#hero" onclick="handleClick()"><i class="fa-sharp fa-solid fa-arrow-up" id="totop"></i></a>
+    <!-- Hero-section -->
+    <section>
+      <div class="hero-section">
+        <div class="container-hero" id="hero">
+          <div class="header-hero">
+            <h1>Discover digital art & Collect NFTs</h1>
+          </div>
+          <div class="desc-hero">
+            <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+          </div>
+          <div class="hero-img">
+            <img src="assets/Image Placeholder.png" alt="" />
+            <h1>Space Walking</h1>
+            <div class="desc-img">
+              <img src="assets/Avatar Placeholder.png" alt="" />
+              <p>Animakid</p>
+            </div>
+          </div>
+          <div class="get-started">
+            <h1>Get Started</h1>
+            <div class="total">
+              <div class="total-sale">
+                <h2>240K+</h2>
+                <p>Total Sale</p>
+              </div>
+              <div class="total-sale">
+                <h2>100K+</h2>
+                <p>Auctions</p>
+              </div>
+              <div class="total-sale">
+                <h2>240K+</h2>
+                <p>Artists</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero-section -->
+
+    <!-- Trending-collection -->
+    <section>
+      <div class="container-col">
+        <div class="trending-header">
+          <h2 data-aos="fade-right">Trending Collection</h2>
+          <p data-aos="fade-right">Checkout our weekly updated trending collection.</p>
+        </div>
+        <div class="list-trending" data-aos="fade-left">
+          <div class="list-1" >
+            <img src="/assets/trending-img-1.png" alt="" />
+            <div class="child-img">
+              <img src="/assets/child-1-img1.png" alt=""/>
+              <img src="/assets/child-2-img1.png" alt="" />
+              <div>1000+</div>
+            </div>
+            <div class="animals">
+              <h2>DSGN Animals</h2>
+              <div class="user">
+                <img src="/assets/mrfox.png" alt="" />
+                <p>MrFox</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-1">
+            <img src="/assets/trending-img-2.png" class="trending-img" alt="" />
+            <div class="child-img">
+              <img src="/assets/child-1-img1.png" alt="" />
+              <img src="/assets/child-2-img1.png" alt="" />
+              <div>1000+</div>
+            </div>
+            <div class="animals">
+              <h2>Magic Mushrooms</h2>
+              <div class="user">
+                <img src="/assets/srhomie.png" alt="" />
+                <p>Shroomie</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-1">
+            <img src="/assets/trending-img-3.png" class="trending-img" alt="" />
+            <div class="child-img">
+              <img src="/assets/child-1-img1.png" alt="" />
+              <img src="/assets/child-2-img1.png" alt="" />
+              <div>1000+</div>
+            </div>
+            <div class="animals">
+              <h2>Disco Machines</h2>
+              <div class="user">
+                <img src="/assets/turtle.png" alt="" />
+                <p>BeKind2Robots</p>
+              </div>
+            </div>
+          </div>
+          <div class="list-1">
+            <img src="/assets/trending-img-3.png" class="trending-img" alt="" />
+            <div class="child-img">
+              <img src="/assets/child-1-img1.png" alt="" />
+              <img src="/assets/child-2-img1.png" alt="" />
+              <div>1000+</div>
+            </div>
+            <div class="animals">
+              <h2>Disco Machines</h2>
+              <div class="user">
+                <img src="/assets/turtle.png" alt="" />
+                <p>BeKind2Robots</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Trending-collection -->
+
+    <!-- Top Creator -->
+    <section>
+      <div class="top-creator">
+        <div class="creator-header">
+          <div class="left">
+            <h1 data-aos="fade-right">Top Creator</h1>
+            <p data-aos="fade-right">Checkout Top Rated Creators on the NFT Marketplace</p>
+          </div>
+          <div class="right">
+            <button data-aos="fade-left">View Rangkings</button>
+          </div>
+        </div>
+        <div class="list-top-creator">
+          <div class="box-creator1">
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-1.png" alt="" />
+              <h2>Keepitreal</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-2.png" alt="" />
+              <h2>HisbanPahri</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-3.png" alt="" />
+              <h2>Syafaat</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-4.png" alt="" />
+              <h2>GravityOne</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+          </div>
+          <div class="box-creator1">
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-5.png" alt="" />
+              <h2>DigiLab</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-6.png" alt="" />
+              <h2>BlueWhale</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-7.png" alt="" />
+              <h2>Agamm</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-8.png" alt="" />
+              <h2>Prima</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+          </div>
+          <div class="box-creator1">
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-9.png" alt="" />
+              <h2>Fahriansyah</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-10.png" alt="" />
+              <h2>Kemal</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-11.png" alt="" />
+              <h2>Azhar</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+            <div class="top-creator1" data-aos="flip-left">
+              <img src="/assets/top-creator/creator-12.png" alt="" />
+              <h2>Zulkifli</h2>
+              <p>Total Sales: <span>34.53 ETH</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Top Creator -->
+
+    <!-- Browse Categories -->
+    <section>
+      <div class="Browse-Categories">
+        <div class="header-Browse-Categories">
+          <h1 data-aos="fade-right">Browse Categories</h1>
+        </div>
+        <div class="Browse-Categories-box">
+          <div class="category">
+            <div class="category-box1" data-aos="fade-right">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories1.png" alt="" />
+                <img src="/assets/category/hover1.png" class="hover-img" alt="" />
+              </div>
+              <h3>Art</h3>
+            </div>
+            <div class="category-box1" data-aos="fade-right">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories2.png" alt="" />
+                <img src="/assets/category/hover2.png" class="hover-img" alt="" />
+              </div>
+              <h3>Collectibles</h3>
+            </div>
+            <div class="category-box1" data-aos="fade-left">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories3.png" alt="" />
+                <img src="/assets/category/hover3.png" class="hover-img" alt="" />
+              </div>
+              <h3>Music</h3>
+            </div>
+            <div class="category-box1" data-aos="fade-left">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories4.png" alt="" />
+                <img src="/assets/category/hover4.png" class="hover-img" alt="" />
+              </div>
+              <h3>Photography</h3>
+            </div>
+          </div>
+          <div class="category">
+            <div class="category-box1" data-aos="fade-right">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories5.png" alt="" />
+                <img src="/assets/category/hover5.png" class="hover-img" alt="" />
+              </div>
+              <h3>Video</h3>
+            </div>
+            <div class="category-box1" data-aos="fade-right">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories6.png" alt="" />
+                <img src="/assets/category/hover6.png" class="hover-img" alt="" />
+              </div>
+              <h3>Utility</h3>
+            </div>
+            <div class="category-box1" data-aos="fade-left">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories7.png" alt="" />
+                <img src="/assets/category/hover7.png" class="hover-img" alt="" />
+              </div>
+              <h3>Sport</h3>
+            </div>
+            <div class="category-box1" data-aos="fade-left">
+              <div class="hover">
+                <img src="/assets/category/Browse Categories8.png" alt="" />
+                <img src="/assets/category/hover8.png" class="hover-img" alt="" />
+              </div>
+              <h3>Virtual Worlds</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Browse Categories -->
+
+    <!-- Highlight -->
+    <section>
+      <div class="highlight" id="highlight">
+        <div class="container-highlight">
+          <div class="header-highlight">
+            <div class="side-left">
+              <div class="artist-card">
+                <img src="/assets/srhomie.png" alt="" />
+                <h4>Shroomie</h4>
+              </div>
+              <h1>Magic Mushrooms</h1>
+            </div>
+          </div>
+          <div class="header-see">
+            <div class="btn"><i class="fa-regular fa-eye"></i>
+              <p>See NFT</p>
+            </div>
+          </div>
+          <div class="time-highlight">
+            <p>Auction ends in:</p>
+            <div class="wrap-time">
+              <div class="time">
+                <h3 id="hours">0</h3>
+                <label for="">Hours</label>
+              </div>
+              <div class="time">
+                <h3 id="minutes">0</h3>
+                <label for="">Minutes</label>
+              </div>
+              <div class="time">
+                <h3 id="seconds">0</h3>
+                <label for="">Seconds</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Highlight -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
