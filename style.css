@@ -975,3 +975,173 @@ i {
     align-items: center;
   }
 }
+
+.wrapper-regis {
+  display: flex;
+}
+
+.wrapper-regis .regis-image {
+  background: url("/assets/form/regis.png");
+  width: 50%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper-regis .container-form {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.wrapper-regis .container-form > *{
+  color: var(--text-color);
+  font-family: var(--work);
+}
+
+.wrapper-regis .container-form h1 {
+  font-size: 51px;
+  margin-left: 60px;
+}
+
+.wrapper-regis .container-form p {
+  font-size: 22px;
+  margin-left: 60px;
+}
+
+.wrapper-regis .container-form .regis-input {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  gap: 15px;
+}
+
+.wrapper-regis .container-form .regis-input .regis {
+  width: 330px;
+  height: 46px;
+  position: relative;
+}
+
+
+.wrapper-regis .container-form .regis-input .regis i, .lock {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
+
+.wrapper-regis .container-form .regis-input .regis input {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition:  all .2s ease-in-out;
+}
+
+.wrapper-regis .container-form .regis-input .regis input:focus {
+  outline: var(--purple) solid 3px;
+}
+
+.wrapper-regis .container-form .regis-input .user i {
+  color: #858584;
+}
+
+.wrapper-regis .container-form .regis-input .email i {
+  color: #858584;
+}
+.wrapper-regis .container-form .regis-input .pass i {
+  color: #858584;
+}
+
+.wrapper-regis .container-form .regis-input .pass .lock {
+  color: #858584;
+  width: 20px;
+}
+.wrapper-regis .container-form .regis-input .con-pass i {
+  color: #858584;
+  width: 20px;
+}
+
+.wrapper-regis .container-form .regis-input .check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 5px;
+}
+
+.wrapper-regis .container-form .regis-input .check label {
+  font-size: 13px;
+}
+
+.wrapper-regis .container-form .regis-input .signup-btn button {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  transition:  all .2s ease-in-out;
+  font-size: 22px;
+  font-family:var(--work);
+  background-color: var(--purple);
+  color: var(--text-color);
+}
+
+.wrapper-regis .container-form .regis-input .signup-btn button:hover {
+  opacity: .7;
+}
+
+.wrapper-regis .container-form .regis-input .signup-btn {
+  width: 330px;
+  height: 46px;
+  position: relative;
+}
+
+@media (width <= 971px) {
+  .wrapper-regis {
+    display: flex;
+    flex-direction: column;
+  }
+  .wrapper-regis .regis-image {
+    background: url("/assets/form/regis.png");
+    width: 100%;
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .wrapper-regis .container-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin-top: -50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .wrapper-regis .container-form h1 {
+    font-size: 38px;
+    margin-left: 0;
+  }
+  
+  .wrapper-regis .container-form p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .wrapper-regis .container-form .regis-input {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    gap: 15px;
+  }
+}
+
+#nav-mobile {
+  z-index: 99999;
+}

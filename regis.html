@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="nav">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: #a259ff; transform: ; msfilter: ">
+          <path
+            d="M19.148 2.971A2.008 2.008 0 0 0 17.434 2H6.566c-.698 0-1.355.372-1.714.971L2.143 7.485A.995.995 0 0 0 2 8a3.97 3.97 0 0 0 1 2.618V19c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-8.382A3.97 3.97 0 0 0 22 8a.995.995 0 0 0-.143-.515l-2.709-4.514zm.836 5.28A2.003 2.003 0 0 1 18 10c-1.103 0-2-.897-2-2 0-.068-.025-.128-.039-.192l.02-.004L15.22 4h2.214l2.55 4.251zM10.819 4h2.361l.813 4.065C13.958 9.137 13.08 10 12 10s-1.958-.863-1.993-1.935L10.819 4zM6.566 4H8.78l-.76 3.804.02.004C8.025 7.872 8 7.932 8 8c0 1.103-.897 2-2 2a2.003 2.003 0 0 1-1.984-1.749L6.566 4zM10 19v-3h4v3h-4zm6 0v-3c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v3H5v-7.142c.321.083.652.142 1 .142a3.99 3.99 0 0 0 3-1.357c.733.832 1.807 1.357 3 1.357s2.267-.525 3-1.357A3.99 3.99 0 0 0 18 12c.348 0 .679-.059 1-.142V19h-3z"
+          ></path>
+        </svg>
+        <h1>NFT Marketplace</h1>
+      </div>
+      <ul class="link-nav">
+        <li><a href="/index.html">Marketplace</a></li>
+        <li><a href="">Rangkings</a></li>
+        <li><a href="">Connect a wallet</a></li>
+        <li><a href="regis.html">Sign Up</a></li>
+      </ul>
+      <i class="fa-solid fa-bars" id="hamburger-menu"></i>
+    </header>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="/index.html" onclick="handleClick()">Marketplace</a></li>
+      <li><a href="" onclick="handleClick()">Rangkings</a></li>
+      <li><a href="#highlight" onclick="handleClick()">Highlight</a></li>
+      <li><a href="" onclick="handleClick()">Connect a wallet</a></li>
+      <li><a href="regis.html" onclick="handleClick()">Sign Up</a></li>
+    </ul>
+    <!-- Navbar -->
+
+    <!-- Regis Form -->
+
+    <form>
+      <div class="wrapper-regis">
+        <div class="regis-image"></div>
+        <div class="container-form">
+          <h1>Create Account</h1>
+          <p>
+            Welcome! enter your details and start <br />
+            creating, collecting and selling NFTs.
+          </p>
+          <div class="regis-input">
+            <div class="user regis">
+              <i class="fa-regular fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="email regis">
+              <i class="fa-regular fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="pass regis">
+              <i class="fa-solid fa-lock" id="lockIcon"></i>
+              <input type="password" placeholder="Password" id="password1" />
+            </div>
+            <div class="con-pass regis">
+              <i class="fa-solid fa-lock" id="lockIcon1"></i>
+              <input type="password" placeholder="Confirm Password" id="password2" />
+            </div>
+            <div class="check">
+              <input type="checkbox" id="showPassword" />
+              <label for="">Show Password</label>
+            </div>
+            <div class="signup-btn regis">
+              <button type="button">Create account</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <!-- Regis Form -->
+    <script>
+      // Get the checkbox
+      let checkbox = document.getElementById("showPassword");
+
+      // Get the password fields
+      let password = document.getElementById("password1");
+      let confirmPassword = document.getElementById("password2");
+
+      checkbox.addEventListener("click", function () {
+        // If the checkbox is checked, display the password as plain text
+        if (checkbox.checked) {
+          password.type = "text";
+          confirmPassword.type = "text";
+          document.getElementById("lockIcon").className = "fas fa-unlock";
+          document.getElementById("lockIcon1").className = "fas fa-unlock";
+        } else {
+          // Otherwise, hide the password by setting it to the password type
+          password.type = "password";
+          document.getElementById("lockIcon").className = "fas fa-lock";
+          document.getElementById("lockIcon1").className = "fas fa-lock";
+          confirmPassword.type = "password";
+        }
+      });
+      const navbar = document.getElementById("nav");
+      const toTop = document.getElementById("totop");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+          navbar.classList.add("blur");
+          toTop.style.visibility = "visible";
+        } else {
+          navbar.classList.remove("blur");
+          toTop.style.visibility = "hidden";
+        }
+      });
+
+      const navMoble = document.getElementById("nav-mobile");
+      const hamburger = document.getElementById("hamburger-menu");
+      const handleNav = document.querySelectorAll(".handle");
+
+      hamburger.addEventListener("click", function () {
+        navMoble.classList.toggle("transform-nav");
+      });
+
+      window.addEventListener("click", function (e) {
+        if (e.target != navMoble) {
+          hamburger.classList.remove("transform-nav");
+        }
+      });
+
+      function handleClick() {
+        navMoble.classList.remove("transform-nav");
+      }
+    </script>
+  </body>
+</html>

@@ -36,7 +36,7 @@ function handleClick() {
 const endTime = new Date(); 
 endTime.setHours(endTime.getHours() + 60); 
 
-setInterval(function () {
+setInterval(function() {
   const currentTime = new Date();
 
   let timeRemaining = endTime - currentTime;
@@ -45,16 +45,20 @@ setInterval(function () {
   let minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   let seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById("hours").textContent = hours;
+  document.getElementById("minutes").textContent = minutes;
+  document.getElementById("seconds").textContent = seconds;
 
   if (timeRemaining < 0) {
-    document.getElementById("hours").innerHTML = "0";
-    document.getElementById("minutes").innerHTML = "0";
-    document.getElementById("seconds").innerHTML = "0";
+    document.getElementById("hours").textContent = "0";
+    document.getElementById("minutes").textContent = "0";
+    document.getElementById("seconds").textContent = "0";
   }
 }, 1000);
+
+
+
+
 
 // const container = document.getElementById("container");
 // const jumbo = document.getElementById("jumbo");
