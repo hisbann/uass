@@ -70,10 +70,15 @@ tl.to(".loader-regis", {
     height: 0,
     duration: .5
 });
-tl.from("", { 
+gsap.from("header", { 
     opacity: 0,
     duration: .5,
-    delay: .3
+    delay: 1.5
+});
+gsap.from("section", { 
+    opacity: 0,
+    duration: .5,
+    delay: 1.5
 });
 
 // const container = document.getElementById("container");
