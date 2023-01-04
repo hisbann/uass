@@ -978,7 +978,9 @@ i {
 
 .wrapper-regis {
   display: flex;
+  animation: scale1 1s forwards;
 }
+
 
 .wrapper-regis .regis-image {
   background: url("/assets/form/regis.png");
@@ -1144,4 +1146,20 @@ i {
 
 #nav-mobile {
   z-index: 99999;
+}
+
+#nav {
+  z-index: 999999;
+}
+
+.loader-regis {
+  position: absolute;
+  width: 2000px;
+  height: 2000px;
+  background-color: var(--purple);
+  z-index: 9999999;
+  border-radius: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

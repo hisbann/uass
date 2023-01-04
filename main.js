@@ -31,8 +31,6 @@ function handleClick() {
   navMoble.classList.remove('transform-nav');
 }
 
-
-
 const endTime = new Date(); 
 endTime.setHours(endTime.getHours() + 60); 
 
@@ -55,7 +53,6 @@ setInterval(function() {
     document.getElementById("seconds").textContent = "0";
   }
 }, 1000);
-
 
 
 
