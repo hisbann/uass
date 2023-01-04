@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="regis.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/regis.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <title>Register</title>
   </head>
@@ -21,19 +21,14 @@
         <h1>NFT Marketplace</h1>
       </div>
       <ul class="link-nav">
-        <li><a href="/index.html">Marketplace</a></li>
-        <li><a href="">Rangkings</a></li>
-        <li><a href="">Connect a wallet</a></li>
-        <li><a href="regis.html">Sign Up</a></li>
+        <li><a href="/components/index.html">Home</a></li>
+        <li><a href="/components/regis.html">Sign Up</a></li>
       </ul>
       <i class="fa-solid fa-bars" id="hamburger-menu"></i>
     </header>
     <ul class="nav-mobile" id="nav-mobile">
-      <li><a href="/index.html" onclick="handleClick()">Marketplace</a></li>
-      <li><a href="" onclick="handleClick()">Rangkings</a></li>
-      <li><a href="#highlight" onclick="handleClick()">Highlight</a></li>
-      <li><a href="" onclick="handleClick()">Connect a wallet</a></li>
-      <li><a href="regis.html" onclick="handleClick()">Sign Up</a></li>
+      <li><a href="/components/index.html" onclick="handleClick()">Home</a></li>
+      <li><a href="/components/regis.html" onclick="handleClick()">Sign Up</a></li>
     </ul>
     <!-- Navbar -->
 
@@ -52,16 +47,18 @@
           <div class="regis-input">
             <div class="user regis">
               <i class="fa-regular fa-user"></i>
-              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Username" id="usernm" />
             </div>
             <div class="email regis">
               <i class="fa-regular fa-envelope"></i>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="eml"/>
             </div>
             <div class="pass regis">
               <i class="fa-solid fa-lock" id="lockIcon"></i>
               <input type="password" placeholder="Password" id="password1" />
             </div>
+            <div id="tooltip"></div>
+            <div id="tooltip2"></div>
             <div class="con-pass regis">
               <i class="fa-solid fa-lock" id="lockIcon1"></i>
               <input type="password" placeholder="Confirm Password" id="password2" />
@@ -132,8 +129,9 @@
       function handleClick() {
         navMoble.classList.remove("transform-nav");
       }
+
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="regist.js"></script>
+    <script src="/js/regist.js"></script>
   </body>
 </html>

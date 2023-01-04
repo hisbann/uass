@@ -54,8 +54,27 @@ setInterval(function() {
   }
 }, 1000);
 
-
-
+let tl = gsap.timeline();
+tl.to(".loader-regis", { 
+    width: 0,
+    height: 0,
+    duration: .5
+});
+tl.to(".loader-regis", { 
+    width: "2000px",
+    height: "2000px",
+    duration: .5
+});
+tl.to(".loader-regis", { 
+    width: 0,
+    height: 0,
+    duration: .5
+});
+tl.from("", { 
+    opacity: 0,
+    duration: .5,
+    delay: .3
+});
 
 // const container = document.getElementById("container");
 // const jumbo = document.getElementById("jumbo");

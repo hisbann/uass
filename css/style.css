@@ -1046,7 +1046,22 @@ i {
 }
 
 .wrapper-regis .container-form .regis-input .regis input:focus {
+  outline: red solid 3px;
+}
+.wrapper-regis .container-form .regis-input .regis input:focus.email-outline {
   outline: var(--purple) solid 3px;
+}
+.wrapper-regis .container-form .regis-input .regis #usernm:focus.email-outline {
+  outline: var(--purple) solid 3px;
+}
+.wrapper-regis .container-form .regis-input .regis #eml:focus.email-outline {
+  outline: var(--purple) solid 3px;
+}
+.wrapper-regis .container-form .regis-input .regis input:focus.requir {
+  outline: var(--purple) solid 3px;
+}
+.wrapper-regis .container-form .regis-input .regis input:focus.ppp {
+  outline: red solid 3px;
 }
 
 .wrapper-regis .container-form .regis-input .user i {
@@ -1059,6 +1074,44 @@ i {
 .wrapper-regis .container-form .regis-input .pass i {
   color: #858584;
 }
+
+.wrapper-regis .container-form .regis-input #tooltip {
+  color: #fff;
+  background-color: #3b3b3b;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 250px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+.wrapper-regis .container-form .regis-input #tooltip2 {
+  color: #fff;
+  background-color: #3b3b3b;
+  position: absolute;
+  top: 68%;
+  left: 60%;
+  width: 250px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+
 
 .wrapper-regis .container-form .regis-input .pass .lock {
   color: #858584;
@@ -1104,6 +1157,15 @@ i {
 }
 
 @media (width <= 971px) {
+  .wrapper-regis .container-form .regis-input #tooltip {
+    left: 30%;
+    top: 114%;
+  }
+  .wrapper-regis .container-form .regis-input #tooltip2 {
+    left: 30%;
+    top: 12%;
+  }
+
   .wrapper-regis {
     display: flex;
     flex-direction: column;
