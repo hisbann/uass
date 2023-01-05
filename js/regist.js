@@ -26,7 +26,6 @@ gsap.from("header", {
 });
 
 const pass1 = document.getElementById("password1");
-const pass2 = document.getElementById("password2");
 const toolTip = document.getElementById("tooltip");
 const toolTip2 = document.getElementById("tooltip2");
 
@@ -46,19 +45,22 @@ pass1.addEventListener("input", function () {
     toolTip.style.display = "none";
   }
 });
+
+const pass2 = document.getElementById("password2");
+
 pass2.addEventListener("input", function () {
   if (pass2.value.length === 0) {
     toolTip2.innerText = "";
-    pass2.classList.add("ppp");
+    pass2.classList.add("ppp2");
     toolTip2.style.display = "none";
   } else if (pass1.value != pass2.value) {
     toolTip2.innerText = "password tidak sama";
-    pass2.classList.add("ppp");
+    pass2.classList.add("ppp2");
     toolTip2.style.display = "flex";
   } else if (pass2.value.length >= 3) {
     toolTip2.innerText = "";
     pass2.classList.add("requir");
-    pass2.classList.remove("ppp");
+    pass2.classList.remove("ppp2");
     toolTip2.style.display = "none";
   }
 });

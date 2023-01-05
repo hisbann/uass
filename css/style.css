@@ -1057,10 +1057,17 @@ i {
 .wrapper-regis .container-form .regis-input .regis #eml:focus.email-outline {
   outline: var(--purple) solid 3px;
 }
-.wrapper-regis .container-form .regis-input .regis input:focus.requir {
+.wrapper-regis .container-form .regis-input .regis #password1:focus.requir {
   outline: var(--purple) solid 3px;
 }
-.wrapper-regis .container-form .regis-input .regis input:focus.ppp {
+.wrapper-regis .container-form .regis-input .regis #password2:focus.requir {
+  outline: var(--purple) solid 3px;
+}
+
+.wrapper-regis .container-form .regis-input .regis #password1:focus.ppp {
+  outline: red solid 3px;
+}
+.wrapper-regis .container-form .regis-input .regis #password2:focus.ppp2 {
   outline: red solid 3px;
 }
 
@@ -1163,7 +1170,7 @@ i {
   }
   .wrapper-regis .container-form .regis-input #tooltip2 {
     left: 30%;
-    top: 12%;
+    top: 123%;
   }
 
   .wrapper-regis {
