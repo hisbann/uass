@@ -73,3 +73,4 @@ const usernm = document.getElementById("usernm");
 usernm.addEventListener("input", function () {
   return usernm.value.length >= 1 ? usernm.classList.add("email-outline") : usernm.classList.remove("email-outline");
 });
+

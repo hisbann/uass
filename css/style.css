@@ -106,6 +106,7 @@ header .fa-bars {
   font-size: 40px;
   color: var(--text-color);
   z-index: 99999;
+  visibility: hidden;
 }
 
 .nav-mobile {
@@ -967,7 +968,7 @@ i {
   .container-footer .wrapper-footer {
     flex-direction: column;
     justify-content: space-around;
-    gap: 30px;
+    gap: 10px;
   }
   .container-footer {
     height: 100vh;
@@ -976,7 +977,7 @@ i {
   }
 }
 
-.wrapper-regis {
+form .wrapper-regis {
   display: flex;
   animation: scale1 1s forwards;
 }
@@ -1163,7 +1164,7 @@ i {
   position: relative;
 }
 
-@media (width <= 971px) {
+@media screen and (max-width: 971px) {
   .wrapper-regis .container-form .regis-input #tooltip {
     left: 30%;
     top: 114%;
@@ -1174,7 +1175,6 @@ i {
   }
 
   .wrapper-regis {
-    display: flex;
     flex-direction: column;
   }
   .wrapper-regis .regis-image {

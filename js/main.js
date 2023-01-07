@@ -3,6 +3,7 @@ AOS.init();
 const navbar = document.getElementById("nav");
 const toTop = document.getElementById("totop");
 
+
 window.addEventListener("scroll", function () {
   if (window.scrollY > 200) {
     navbar.classList.add("blur");
@@ -12,6 +13,7 @@ window.addEventListener("scroll", function () {
     toTop.style.visibility = "hidden";
   }
 });
+
 
 const navMoble = document.getElementById('nav-mobile');
 const hamburger = document.getElementById('hamburger-menu');
@@ -80,6 +82,7 @@ gsap.from("section", {
     duration: .5,
     delay: 1.5
 });
+
 
 // const container = document.getElementById("container");
 // const jumbo = document.getElementById("jumbo");
