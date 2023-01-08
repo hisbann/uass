@@ -19,11 +19,11 @@ tl.from(".wrapper-regis", {
   duration: 0.5,
   delay: 0.3,
 });
-gsap.from("header", {
-  opacity: 0,
-  duration: 1,
-  delay: 2,
-});
+// gsap.from("header", {
+//   opacity: 0,
+//   duration: 1,
+//   delay: 2,
+// });
 gsap.from(".container-rangkings", { 
     opacity: 0,
     duration: .5,

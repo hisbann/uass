@@ -73,7 +73,7 @@ tl.to(".loader-regis", {
     duration: .5
 });
 gsap.from("header", { 
-    opacity: 0,
+    y: -500,
     duration: .5,
     delay: 1.5
 });
