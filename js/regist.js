@@ -19,11 +19,11 @@ tl.from(".wrapper-regis", {
   duration: 0.5,
   delay: 0.3,
 });
-// gsap.from("header", {
-//   opacity: 0,
-//   duration: 1,
-//   delay: 2,
-// });
+gsap.from("header", {
+  y: -500,
+  duration: 1,
+  delay: 2,
+});
 
 const pass1 = document.getElementById("password1");
 const toolTip = document.getElementById("tooltip");
